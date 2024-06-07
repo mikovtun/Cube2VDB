@@ -5,5 +5,14 @@ Multithreaded batch conversion is supported:
 ```
 cube2vdb <input file 1> [input file 2] [input file 3] ...
 ```
+
+## Building
 You must have the `openvdb`, `blosc`, and `tbb` libraries installed.
+Then,
+```
+mkdir build
+cd build
+cmake ..
+make
+```
 Alternatively, you may use the provided apptainer definitions file for a no-frills, containerized program.
